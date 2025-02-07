@@ -10,7 +10,7 @@ const poppins = Poppins({
 });
 const header = () => {
   return (
-    <header className={poppins.className}>
+    <header>
       <div className="mx-auto container flex items-center">
         <nav className="main-nav-wrapper px-2 sm:px-0 py-2.5 w-full lg:w-4/5 flex items-center">
           <div className="flex flex-wrap justify-between items-center w-full">

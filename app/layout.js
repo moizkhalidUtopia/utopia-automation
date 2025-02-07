@@ -9,7 +9,7 @@ const poppins = Poppins({
 
 export const metadata = {
   title: "Utopia Automation",
-  description: "Utopia Automation - Automation for Utopia",
+  description: "Utopia Automation - Machine Automation ",
 };
 
 export default function RootLayout({ children }) {

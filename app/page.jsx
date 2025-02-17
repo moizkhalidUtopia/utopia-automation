@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Carousel from "./carousel";
+import Moiz from "./moiz";
 import img1 from "../public/slide1.jpeg";
 import Newslider from "./newSlider";
 export default function Home() {
@@ -7,7 +8,8 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       {/* Slider */}
       {/* <Carousel/> */}
-      <Newslider />
+      {/* <Newslider /> */}
+      <Moiz/>
       {/* SERVICE SECTION */}
       <section className="z-10 max-w-5xl w-full items-center justify-between  text-sm lg:flex lg:flex-col text-center mt-4">
         <h2>EXPLORE MORE WITH US</h2>

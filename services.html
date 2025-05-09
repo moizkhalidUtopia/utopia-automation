@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Utopia Automation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./src/css/output.css" />
+  </head>
+  <body class="overflow-x-hidden">
+    <header class="bg-black/80 flex justify-center z-[999] sticky top-0 h-24">
+      <div class="container w-full items-center justify-between px-2 pt-3 text-white lg:flex py-4">
+        <div class="flex w-full items-center justify-between lg:w-fit">
+          <a href="./index.html"><img src="./dist/images/logo.webp" class="w-44 sm:w-auto" alt="Utopia Fulfillment" /></a>
+          <div class="burger-menu inline-block lg:hidden">
+            <div class="bar1 my-2 h-1 w-9 rounded-md bg-white transition-all"></div>
+            <div class="bar2 my-2 h-1 w-9 rounded-md bg-white transition-all"></div>
+            <div class="bar3 my-2 h-1 w-9 rounded-md bg-white transition-all"></div>
+          </div>
+        </div>
+        <nav class="nav-menu relative w-full bg-white lg:top-0 lg:bg-transparent">
+          <ul class="absolute top-4 w-full items-center justify-end gap-6 rounded-sm bg-[#1C1C1E] lg:relative lg:top-0 lg:flex lg:rounded-none lg:bg-transparent lg:p-0 font-semibold">
+            <li class="mx-5 flex border-b-[0.5px] border-[rgba(255,255,255,0.3)] lg:border-none lg:pt-0 hover:text-[#cbb495] relative before:content-[''] before:absolute before:w-full before:h-[3px] before:bg-transparent before:bottom-[-1px] before:transition-colors before:duration-300 before:left-0">
+              <a href="./index.html" class="py-2 lg:py-0">HOME</a>
+            </li>
+            <li class="mx-5 flex border-b-[0.5px] border-[rgba(255,255,255,0.3)] lg:border-none lg:pt-0 hover:text-[#cbb495] relative before:content-[''] before:absolute before:w-full before:h-[3px] before:bg-transparent before:bottom-[-1px] before:left-0">
+              <a href="./about.html" class="py-2 lg:py-0">SERVICES</a>
+            </li>
+            <li class="mx-5 flex border-b-[0.5px] border-[rgba(255,255,255,0.3)] lg:border-none lg:pt-0 hover:text-[#cbb495] relative before:content-[''] before:absolute before:w-full before:h-[3px] before:bg-transparent before:bottom-[-1px] before:left-0">
+              <a href="./service.html" class="py-2 lg:py-0">MISSON & VISION</a>
+            </li>
+            <li class="mx-5 flex border-b-[0.5px] border-[rgba(255,255,255,0.3)] lg:border-none lg:pt-0 hover:text-[#cbb495] relative before:content-[''] before:absolute before:w-full before:h-[3px] before:bg-transparent before:bottom-[-1px] before:left-0">
+              <a href="./contact-us.html" class="py-2 lg:py-0">CONTACT US</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <!-- Banner Section -->
+      <section class="relative -mt-24 pt-24 min-h-[460px] flex items-center bg-no-repeat bg-cover bg-center before:content-[''] before:absolute before:inset-0 before:w-full before:h-full before:z-0 about-banner-gradient" style="background-image: url(https://www.utopia.pk/dist/images/product-banner.webp)">
+        <div class="container px-2 relative mx-0 sm:mx-auto min-h-[460px]">
+          <div class="absolute top-1/2 transform -translate-y-1/2">
+            <h1 class="text-6xl font-medium text-white uppercase"><strong class="text-white block">Our Services:</strong></h1>
+            <h3 class="text-white max-w-[530px] text-lg mt-1.5">Leading global textile solutions with innovation, precision and trust. A manufacturing powerhouse, crafting quality fabrics across dyeing, weaving, knitting and printing. Proudly exporting excellence to United States, Canada, Australia, Europe, and beyond.</h3>
+          </div>
+        </div>
+      </section>
+      <!-- Industrial and Process Automation Section -->
+      <section class="mx-auto container py-11">
+        <h3 class="text-center text-[#CBB495] font-semibold text-3xl relative after:content-[''] after:w-[34px] after:h-[3px] after:bg-black after:absolute after:left-1/2 after:top-[-5px] after:transform after:translate-x-[-50%] w-fit mx-auto">GROW WITH US</h3>
+        <h4 class="max-w-4xl mx-auto text-center text-lg font-base text-[#1E1E1E] mb-5">Streamline your workflows and minimize manual disorganization. Optimize manufacturing with our cutting-edge technologies and automation solutions.</h4>
+        <!-- SERVICE CARD -->
+        <div class="flex items-center justify-center gap-9">
+          <img src="/src/images/slide1.jpeg" class="w-1/2" alt="" />
+          <div>
+            <h2 class="text-[#CBB495] font-semibold text-4xl uppercase">Automatic Length Hemming</h2>
+            <p class="text-[#1E1E1E] font-light text-base mt-4 mb-4">
+              The Automatic Length Hemming Machine ensures precise and efficient finishing of fabric edges. It accurately cuts the fabric to a desired length and removes any excess waste, minimizing material loss. It then proceeds to fold the fabric edge thrice, creating a durable and neat hem. Finally, the machine stitches the folds, ensuring a strong and consistent finish.
+              <br />
+              <br />
+              Textile manufacturers can benefit from high-precision hemming services as it can improve product quality, reduce labor costs, and increase production efficiency.
+            </p>
+            <p class="text-[#1E1E1E] font-light text-base mt-4 mb-4"></p>
+          </div>
+        </div>
+        <!-- SERVICE CARD -->
+        <div class="flex items-center justify-center gap-9 mt-12">
+          <div>
+            <h2 class="text-[#CBB495] font-semibold text-4xl uppercase">Beam Barrel</h2>
+            <p class="text-[#1E1E1E] font-light text-base mt-4 mb-4">
+              Beam Barrels are crucial for the efficient loading and transportation of thread, ensuring a smooth transfer to our production machines. These barrels are designed to hold large quantities of thread for maintaining its tension, so it doesn’t tangle during movement. With this, our machines receive a consistent and uninterrupted supply of thread, minimizing downtime and maximizing productivity.
+              <br />
+              <br />
+              Our Beam Barrels are designed to optimize thread transport, reduce material waste and improve production flow.
+            </p>
+          </div>
+          <img src="/src/images/slide1.jpeg" class="w-1/2" alt="" />
+        </div>
+      </section>
+    </main>
+    <!-- FOOTER -->
+    <footer class="bg-[#1C1C1E]">
+      <div class="bg-[#0B0B0BEB]">
+        <p class="py-3 text-center text-sm text-[#c1c1c1] md:py-3 md:text-sm">©<span id="currentYear">2025</span> Utopia Automation. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/validator/13.9.0/validator.min.js"></script>
+    <script>
+      document.getElementById("contactForm").addEventListener("submit", function (event) {
+        event.preventDefault(); // Prevent form submission
+
+        let isValid = true;
+
+        // Get form values
+        const fullName = document.getElementById("fullName").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const message = document.getElementById("message").value.trim();
+
+        // Name Validation (At least 3 chars, only letters)
+        if (!validator.isAlpha(fullName.replace(/\s/g, ""), "en-US") || !validator.isLength(fullName, { min: 3 })) {
+          document.getElementById("nameError").style.display = "block";
+          isValid = false;
+        } else {
+          document.getElementById("nameError").style.display = "none";
+        }
+
+        // Email Validation
+        if (!validator.isEmail(email)) {
+          document.getElementById("emailError").style.display = "block";
+          isValid = false;
+        } else {
+          document.getElementById("emailError").style.display = "none";
+        }
+
+        // Message Validation (Min 10 characters)
+        if (!validator.isLength(message, { min: 10 })) {
+          document.getElementById("messageError").style.display = "block";
+          isValid = false;
+        } else {
+          document.getElementById("messageError").style.display = "none";
+        }
+
+        // If all validations pass, allow submission
+        if (isValid) {
+          alert("Form submitted successfully!");
+          // this.submit(); // Uncomment this to actually submit the form
+        }
+      });
+    </script>
+  </body>
+</html>

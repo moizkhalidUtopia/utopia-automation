@@ -4,12 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Utopia Automation</title>
+    <link rel="icon" type="image/png" href="dist/images/favicon-96x96.png" sizes="96x96" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" /> -->
     <link rel="stylesheet" href="./src/css/output.css" />
   </head>
   <body class="overflow-x-hidden">
@@ -17,7 +18,7 @@
       <div class="container w-full items-center justify-between px-2 pt-3 text-white lg:flex py-4">
         <div class="flex w-full items-center justify-between lg:w-fit">
           <a href="./index.html"><img src="./dist/images/logo.webp" class="w-44 sm:w-auto" alt="Utopia Automation logo" /></a>
-          <div class="burger-menu inline-block lg:hidden changed" onclick="burgerMenuFunc(this)">
+          <div class="burger-menu inline-block lg:hidden changed" onclick="toggleBurgerMenu(this)">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
@@ -51,31 +52,32 @@
               <h2 class="title">AUTOMATE & <br /><span style="color: #cbb495">MODERNIZE</span></h2>
               <h3 class="topic">INDUSTRIAL MACHINERY OF THE NEW ERA</h3>
               <div class="des">Unlock greater efficiency and advancement with Utopia Automation where we transform industries and empower businesses to achieve unprecedented productivity across the globe.</div>
-              <div class="buttons">
+              <!-- <div class="buttons">
                 <a href="#" class="btn">LEARN MORE</a>
-              </div>
+              </div> -->
             </div>
           </div>
           <div class="item">
             <img src="./src/images/slide2.jpeg" />
             <div class="content">
-              <h2 class="title">AUTOMATE & <br /><span style="color: #cbb495">MODERNIZE</span></h2>
-              <h3 class="topic">INDUSTRIAL MACHINERY OF THE NEW ERA</h3>
-              <div class="des">Unlock greater efficiency and advancement with Utopia Automation where we transform industries and empower businesses to achieve unprecedented productivity across the globe.</div>
-              <div class="buttons">
+              <h2 class="title">INTELLIGENT &amp; <br /><span style="color: #cbb495">INTEGRATED</span></h2>
+              <h3 class="topic">SMART SOLUTIONS FOR SMART INDUSTRIES</h3>
+              <div class="des">Utopia Automation delivers cutting-edge solutions that streamline operations and reduce human error across your production line.</div>
+              <!-- <div class="buttons">
                 <a href="#" class="btn">LEARN MORE</a>
-              </div>
+              </div> -->
             </div>
           </div>
           <div class="item">
             <img src="./src/images/slide3.jpeg" />
             <div class="content">
-              <h2 class="title">AUTOMATE & <br /><span style="color: #cbb495">MODERNIZE</span></h2>
-              <h3 class="topic">INDUSTRIAL MACHINERY OF THE NEW ERA</h3>
-              <div class="des">Unlock greater efficiency and advancement with Utopia Automation where we transform industries and empower businesses to achieve unprecedented productivity across the globe.</div>
-              <div class="buttons">
+              <h2 class="title">RELIABLE &amp; <br /><span style="color: #cbb495">SCALABLE</span></h2>
+              <h3 class="topic">FUTURE-READY TECHNOLOGY FOR GROWING DEMANDS</h3>
+              <div class="des">Our automation systems are built to evolve with your business—ensuring consistency, scalability, and performance that keep you ahead in a rapidly changing industrial landscape.</div>
+
+              <!-- <div class="buttons">
                 <a href="#" class="btn">LEARN MORE</a>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -100,15 +102,21 @@
         <!-- <div class="time"></div> -->
       </div>
       <!-- Industrial and Process Automation Section -->
-      <section class="mx-auto container py-11 hidden">
-        <h3 class="text-center text-[#CBB495] font-semibold text-3xl relative after:content-[''] after:w-[34px] after:h-[3px] after:bg-black after:absolute after:left-1/2 after:top-[-5px] after:transform after:translate-x-[-50%] w-fit mx-auto">GROW WITH US</h3>
-        <h4 class="max-w-4xl mx-auto text-center text-lg font-base text-[#1E1E1E] mb-5">Streamline your workflows and minimize manual disorganization. Optimize manufacturing with our cutting-edge technologies and automation solutions.</h4>
+      <section class="mx-auto container py-11">
+        <h3 class="text-center text-[#CBB495] font-semibold text-2xl xl:text-3xl relative after:content-[''] after:w-[34px] after:h-[3px] after:bg-black after:absolute after:left-1/2 after:top-[-5px] after:transform after:translate-x-[-50%] w-fit mx-auto">GROW WITH US</h3>
+        <h4 class="max-w-4xl mx-auto text-center text-base xl:text-lg font-base text-[#1E1E1E] mb-5">Streamline your workflows and minimize manual disorganization. Optimize manufacturing with our cutting-edge technologies and automation solutions.</h4>
         <!-- SERVICE CARD -->
-        <div class="flex items-center justify-center gap-9">
-          <img src="/src/images/slide1.jpeg" class="w-1/2" data-aos="fade-right" alt="" />
+        <div class="flex xl:items-center xl:justify-center xl:flex-row flex-col gap-5 xl:gap-9 px-2">
+          <div class="xl:hidden mt-2">
+            <h2 class="text-[#CBB495] font-semibold xl:text-5xl text-3xl leading-9 uppercase" data-aos="fade-left">Industrial</h2>
+            <span class="block relative font-semibold text-[#1E1E1E] text-lg xl:text-xl uppercase after:content-[''] after:w-24 after:h-[3px] after:bg-black after:absolute after:left-0 after:bottom-[-5px]" data-aos="fade-left"> Automation </span>
+          </div>
+          <img src="/dist/images/machine-1.jpg" class="w-full xl:w-1/2" data-aos="fade-right" alt="length Hemming Machine" />
           <div data-aos="fade-left">
-            <h2 class="text-[#CBB495] font-semibold text-5xl leading-9 uppercase" data-aos="fade-left">Industrial</h2>
-            <span class="block relative font-semibold text-[#1E1E1E] text-xl uppercase after:content-[''] after:w-24 after:h-[3px] after:bg-black after:absolute after:left-0 after:bottom-[-5px]" data-aos="fade-left"> Automation </span>
+            <div class="hidden xl:block">
+              <h2 class="text-[#CBB495] font-semibold xl:text-5xl text-3xl leading-9 uppercase" data-aos="fade-left">Industrial</h2>
+              <span class="block relative font-semibold text-[#1E1E1E] text-lg xl:text-xl uppercase after:content-[''] after:w-24 after:h-[3px] after:bg-black after:absolute after:left-0 after:bottom-[-5px]" data-aos="fade-left"> Automation </span>
+            </div>
             <p class="text-[#1E1E1E] font-light text-base mt-4 mb-4" data-aos="fade-left" data-aos-offset="50">Our Industrial Automation seamlessly integrates advanced technologies to optimize manufacturing processes and streamline your production lines. Here's how we help:</p>
             <ul class="text-[#1E1E1E] font-light text-base">
               <li data-aos="fade-left" data-aos-offset="50"><b class="font-semibold">Increased productivity:</b> With minimum downtime and maximum output, achieve faster production cycles.</li>
@@ -117,14 +125,20 @@
               <li data-aos="fade-left" data-aos-offset="90"><b class="font-semibold">Reduced costs:</b> Optimize resource utilization and eliminate excess procedures.</li>
             </ul>
             <p class="text-[#1E1E1E] font-light text-base mt-4 mb-4" data-aos="fade-left" data-aos-offset="100">While integrating innovative technologies that offer consistent quality, we work closely with you to analyze your specific needs and develop a customized solution that delivers tangible results.</p>
-            <button class="btn">LEARN MORE</button>
+            <button class="btn"><a href="./services.html">LEARN MORE</a></button>
           </div>
         </div>
         <!-- SERVICE CARD -->
-        <div class="flex items-center justify-center gap-9 mt-12">
-          <div data-aos="fade-right">
-            <h2 class="text-[#CBB495] font-semibold text-5xl leading-9 uppercase" data-aos="fade-right">PROCESS</h2>
-            <span class="block relative font-semibold text-[#1E1E1E] text-xl uppercase after:content-[''] after:w-24 after:h-[3px] after:bg-black after:absolute after:left-0 after:bottom-[-5px]" data-aos="fade-right"> Automation </span>
+        <div class="flex xl:items-center xl:justify-center xl:flex-row flex-col gap-5 xl:gap-9 px-2">
+          <div class="xl:hidden order-1 xl:order-none mt-11">
+            <h2 class="text-[#CBB495] font-semibold xl:text-5xl text-3xl leading-9 uppercase" data-aos="fade-right">PROCESS</h2>
+            <span class="block relative font-semibold text-[#1E1E1E] text-lg xl:text-xl uppercase after:content-[''] after:w-24 after:h-[3px] after:bg-black after:absolute after:left-0 after:bottom-[-5px]" data-aos="fade-right"> Automation </span>
+          </div>
+          <div data-aos="fade-right " class="order-3 xl:order-none">
+            <div class="hidden xl:block">
+              <h2 class="text-[#CBB495] font-semibold xl:text-5xl text-3xl leading-9 uppercase" data-aos="fade-right">PROCESS</h2>
+              <span class="block relative font-semibold text-[#1E1E1E] text-lg xl:text-xl uppercase after:content-[''] after:w-24 after:h-[3px] after:bg-black after:absolute after:left-0 after:bottom-[-5px]" data-aos="fade-right"> Automation </span>
+            </div>
             <p class="text-[#1E1E1E] font-light text-base mt-4 mb-4" data-aos="fade-right" data-aos-offset="50">Simplify and automate complex workflows to accelerate time-to-market. Our Process Automation transforms your organizational procedures and eliminates repetition, manual data entry, and more. Here's how you benefit:</p>
             <ul class="text-[#1E1E1E] font-light text-base">
               <li data-aos="fade-right" data-aos-offset="50"><b class="font-semibold">Higher efficiency:</b> Accelerate your manufacturing processes to reduce turnaround times significantly.</li>
@@ -133,14 +147,14 @@
               <li data-aos="fade-right" data-aos-offset="90"><b class="font-semibold">Better customer experience:</b> Deliver faster and more reliable services.</li>
             </ul>
             <p class="text-[#1E1E1E] font-light text-base mt-4 mb-4">We leverage cutting-edge workflow management tools to identify and automate key processes, minimizing manual tasks so you can focus on more strategic business initiatives.</p>
-            <button class="btn">LEARN MORE</button>
+            <button class="btn"><a href="./services.html">LEARN MORE</a></button>
           </div>
-          <img src="/src/images/slide1.jpeg" data-aos="fade-left" class="w-1/2" alt="" />
+          <img src="/dist/images/machine-14.webp" data-aos="fade-left" class="xl:w-1/2 w-full order-2 xl:order-none" alt="Machine Cutter" />
         </div>
       </section>
       <!-- mission & vision section -->
-      <section class="relative mission-vision-sec hidden">
-        <div class="mission-wrapper">
+      <section class="relative mission-vision-sec">
+        <div class="mission-wrapper ml-2">
           <div class="relative misson-txt-heading">
             <h3 class="font-bold text-3xl mb-1.5">MISSION</h3>
           </div>
@@ -148,7 +162,7 @@
             <p>Utopia Automation is dedicated to developing a prosperous and self-reliant business landscape through manufacturing excellence. We aim to foster a transformative industrial revolution, embrace sustainability, and encourage collaborations, creating an everlasting progressive impact.</p>
           </div>
         </div>
-        <div class="vision-wrapper text-right">
+        <div class="vision-wrapper text-right mr-2">
           <div class="vision-txt-heading">
             <h3 class="font-bold text-3xl mb-1.5">VISION</h3>
           </div>
@@ -157,23 +171,25 @@
           </div>
         </div>
       </section>
-      <section class="contact-sec flex items-center justify-between gap-2.5 py-11 container mx-auto hidden" id="contact-us-sec">
-        <div class="max-w-[575px]">
+      <section class="contact-sec flex items-center justify-between gap-2.5 py-11 flex-col xl:flex-row container mx-auto xl:px-0 px-2" id="contact-us-sec">
+        <div class="xl:max-w-[575px] w-full">
           <h4 class="text-[#000000] font-semibold text-base">CONTACT US</h4>
-          <h5 class="text-[#CBB495] font-semibold text-5xl mb-2">
+          <h5 class="text-[#CBB495] font-semibold text-3xl xl:text-5xl mb-2">
             GET IN TOUCH <br />
             TODAY!
           </h5>
           <p class="text-[#989898] font-light text-sm mb-3.5">Ready to embark on your automation journey? Contact us today to learn more about our Automation solutions.</p>
-          <div class="contact-info-wrapper border bg-[#F2F2F2] border-[#DBDBDB] rounded-[2px] flex items-center gap-4 p-4">
-            <div class="contact-info-logo">
+          <!-- <div class="contact-info-wrapper border bg-[#F2F2F2] border-[#DBDBDB] rounded-[2px] flex items-center gap-4 p-4">
+            <div class="contact-info-logo text-base hidden lg:block">
               <i class="fa-solid fa-envelope"></i>
             </div>
             <div class="text-[#000000]">Email: <a class="font-semibold" href="mailto:contact@utopiaautomation.com">contact@utopiaautomation.com</a></div>
-          </div>
+          </div> -->
         </div>
-        <div class="w-[50%]">
-          <form id="contactForm" class="bg-[#F2F2F2] border border-[#F2F2F2] rounded-xl p-8 caret-[#cbb495]">
+        <div class="xl:w-[50%] w-full">
+          <form id="contactForm" class="bg-[#F2F2F2] border border-[#F2F2F2] rounded-xl xl:p-8 md:p-4 p-2 caret-[#cbb495]">
+            <input type="email" id="reqEmail" name="reqEmail" hidden value="contact@utopia.pk" />
+            <input type="text" id="reqSubject" name="reqSubject" hidden value="Utopia Automation: Email from Contact us form" />
             <div class="mb-5">
               <label class="block mb-1 text-sm text-black font-semibold" for="fullName">FULL NAME</label>
               <input type="text" class="border border-[#D0D0D0] rounded-xl h-14 bg-[#F9F9F9] w-full pl-2 focus-visible:outline-[#cbb495]" placeholder="Your Name" name="fullName" id="fullName" />
@@ -194,6 +210,16 @@
 
             <button type="submit" class="btn">SEND</button>
           </form>
+
+          <div class="bg-[#F2F2F2] border border-[#F2F2F2] rounded-xl xl:p-8 md:p-4 p-2 caret-[#cbb495] submission-msg hidden">
+            <h3 class="text-xl">
+              Thankyou for your time!<br />
+              <br />
+              We have received your message. Our team will coordinate with you shortly via email or call. <br />
+              <br />
+              Have a nice day.
+            </h3>
+          </div>
         </div>
       </section>
     </main>
@@ -201,25 +227,27 @@
     <!-- FOOTER -->
     <footer class="bg-[#1C1C1E]">
       <div class="bg-[#0B0B0BEB]">
-        <p class="py-4 text-center text-lg text-[#c1c1c1] md:py-4 md:text-lg">© <span id="currentYear">2025</span> Utopia Automation. All rights reserved.</p>
+        <p class="py-2 md:py-4 text-center text-sm text-[#c1c1c1] px-2 md:text-xl">© <span id="currentYear">2025</span> Utopia Automation. All rights reserved.</p>
       </div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/validator/13.9.0/validator.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
 
     <script>
       document.getElementById("contactForm").addEventListener("submit", function (event) {
-        event.preventDefault(); // Prevent form submission
+        event.preventDefault(); // Prevent default form submission
 
         let isValid = true;
 
         // Get form values
-        const fullName = document.getElementById("fullName").value.trim();
+        const name = document.getElementById("fullName").value.trim();
         const email = document.getElementById("email").value.trim();
         const message = document.getElementById("message").value.trim();
+        const reqEmail = document.getElementById("reqEmail").value;
+        const reqSubject = document.getElementById("reqSubject").value;
 
         // Name Validation (At least 3 chars, only letters)
-        if (!validator.isAlpha(fullName.replace(/\s/g, ""), "en-US") || !validator.isLength(fullName, { min: 3 })) {
+        if (!validator.isAlpha(name.replace(/\s/g, ""), "en-US") || !validator.isLength(name, { min: 3 })) {
           document.getElementById("nameError").style.display = "block";
           isValid = false;
         } else {
@@ -242,10 +270,37 @@
           document.getElementById("messageError").style.display = "none";
         }
 
-        // If all validations pass, allow submission
+        // If all validations pass, submit using fetch
         if (isValid) {
-          alert("Form submitted successfully!");
-          // this.submit(); // Uncomment this to actually submit the form
+          const formData = {
+            reqEmail,
+            reqSubject,
+            name,
+            email,
+            message,
+          };
+
+          fetch("https://contact.utopia.co.uk/api/contact-us", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(formData),
+          })
+            .then((response) => {
+              if (response.ok) {
+                // alert("Your message has been sent successfully!");
+                // document.getElementById("contactForm").reset();
+                document.querySelector(".submission-msg").classList.remove("hidden");
+                document.querySelector("#contactForm").classList.add("hidden");
+              } else {
+                // alert("Failed to send message. Please try again.");
+              }
+            })
+            .catch((error) => {
+              console.error("Error submitting the form:", error);
+              // alert("Something went wrong. Please try again later.");
+            });
         }
       });
     </script>
@@ -258,21 +313,23 @@
         const missionWrapper = document.querySelector(".mission-wrapper");
         const visionWrapper = document.querySelector(".vision-wrapper");
 
-        missionWrapper.addEventListener("mouseenter", function () {
-          missionVisionSec.classList.add("mission-hovered");
-        });
+        if (window.innerWidth > 1500) {
+          missionWrapper.addEventListener("mouseenter", function () {
+            missionVisionSec.classList.add("mission-hovered");
+          });
 
-        missionWrapper.addEventListener("mouseleave", function () {
-          missionVisionSec.classList.remove("mission-hovered");
-        });
+          missionWrapper.addEventListener("mouseleave", function () {
+            missionVisionSec.classList.remove("mission-hovered");
+          });
 
-        visionWrapper.addEventListener("mouseenter", function () {
-          missionVisionSec.classList.add("vision-hovered");
-        });
+          visionWrapper.addEventListener("mouseenter", function () {
+            missionVisionSec.classList.add("vision-hovered");
+          });
 
-        visionWrapper.addEventListener("mouseleave", function () {
-          missionVisionSec.classList.remove("vision-hovered");
-        });
+          visionWrapper.addEventListener("mouseleave", function () {
+            missionVisionSec.classList.remove("vision-hovered");
+          });
+        }
       });
 
       // Home Page Slider Starts
@@ -287,8 +344,8 @@
 
       thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
       let timeRunning = 3000;
-      // let timeAutoNext = 7000;
-      let timeAutoNext = 1000000000;
+      let timeAutoNext = 7000;
+      // let timeAutoNext = 1000000000;
 
       nextDom.onclick = function () {
         showSlider("next");
@@ -349,8 +406,8 @@
       // animateOnView("rightObserve", "righAnimation");
     </script>
     <script>
-      AOS.init();
-      function burgerMenuFunc(x) {
+      // AOS.init();
+      function toggleBurgerMenu(x) {
         x.classList.toggle("opened");
         const navMenu = document.querySelector(".nav-menu");
         navMenu.classList.toggle("closed");

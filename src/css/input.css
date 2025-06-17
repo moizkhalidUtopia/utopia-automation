@@ -69,7 +69,7 @@ body {
 .carousel .list .item .content {
   position: absolute;
   top: 30%;
-  width: 1140px;
+  width: 1150px;
   max-width: 80%;
   left: 45%;
   transform: translateX(-50%);
@@ -367,7 +367,7 @@ body {
 .vision-wrapper {
   position: absolute;
   bottom: 15%;
-  right: 5%;
+  right: 2%;
 }
 .mission-hovered:hover .mission-txt,
 .mission-hovered .misson-txt-heading h3,
@@ -537,6 +537,45 @@ main li:before {
   .thumbnail {
     right: -30%;
   }
+  .mission-vision-sec {
+    background-image: none !important;
+  }
+  .mission-wrapper {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 50%;
+  }
+
+  .vision-wrapper {
+    position: relative;
+    bottom: auto;
+    top: 0;
+    right: 0;
+    text-align: left;
+    background: #cbb495;
+    padding: 30px;
+    width: 50%;
+  }
+
+  .mission-vision-sec {
+    display: flex;
+    height: auto;
+    padding: 0;
+  }
+
+  .mission-txt {
+    max-width: 100% !important;
+  }
+  .vision-txt {
+    max-width: 100%;
+    text-align: left;
+  }
+
+  .mission-wrapper {
+    background: #ccc;
+    padding: 30px;
+  }
 }
 @media (max-width: 1200px) {
   .thumbnail {
@@ -620,6 +659,19 @@ main li:before {
 
   h2.title br {
     display: none;
+  }
+  .mission-vision-sec {
+    flex-direction: column;
+  }
+  .mission-wrapper,
+  .vision-wrapper {
+    width: 100%;
+    margin: 0;
+    padding: 15px;
+  }
+  .mission-wrapper p,
+  .vision-wrapper p {
+    font-size: 16px;
   }
 }
 

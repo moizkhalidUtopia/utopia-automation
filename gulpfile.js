@@ -21,7 +21,7 @@ export const optimizeImages = () =>
     .pipe(gulp.dest("./dist/images"));
 
 // WebP image generation task
-export const generateWebp = () => gulp.src("src/images/*.{jpg,png}")
+export const generateWebp = () => gulp.src("src/images/*.{jpeg,jpg,png}")
                                       .pipe(webp())
                                       .pipe(gulp.dest("./dist/images"));
 
